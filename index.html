@@ -120,18 +120,32 @@
          <div class="about-split-top top-right">
             <img src="image/Transparent4.png">
          </div>
-         <div class="contact-content">
-             <div class="contact-details">
-             <p>Telefon: 0742629290</p>
-             <p>Fax: 12345/12345</p>
-             <p>Sediu social: xxxxxxxxxx xxxx xx</p>
-             <p>Persoana contact: Xulescu Yan</p>
+       
+        <div class="contact-form">
+
+            <div class="contact-title">
+                <h1>Formular de contact<h1>
             </div>
-        
+
+        <form id="contact-form" method="post" actions="contact-form-handeler.php">
+            <input name="name" type="text" class="form-control" placeholder="Nume" required>
+            <br>
+
+            <input name="email" type="email" class="form-control" placeholder="E-mail" required>
+            <br>
+
+            <textarea name="message" class="form-control" placeholder="Mesaj" rows="4" required></textarea>
+            <br>
+
+            <input type="submit" class="form-control submit" value="Trimite">
+
+        </form>
+
         </div>
+
      </div>
 
-    
+   
     <script src="about.js"></script>
     <script src="main.js"></script>
 </body>
